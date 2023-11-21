@@ -7,7 +7,7 @@ index ceabf08..8de9c8b 100644
  	if (search) *search = 0;
  
 -	f = __fopen_rb_ca("/etc/resolv.conf", &_f, _buf, sizeof _buf);
-+	f = __fopen_rb_ca("/sdcard/resolv.conf", &_f, _buf, sizeof _buf);
++	f = __fopen_rb_ca("/data/data/com.kpwnapps.pmmpplugins/resolv.conf", &_f, _buf, sizeof _buf);
  	if (!f) switch (errno) {
  	case ENOENT:
  	case ENOTDIR:
